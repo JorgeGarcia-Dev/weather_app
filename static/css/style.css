@@ -1,0 +1,119 @@
+html {
+    background-color: #003550;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.weather-container {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.app {
+    background-color: #003550;
+    padding: 50px;
+    margin: 0;
+}
+
+header, h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 8vh;
+    margin: 10vh 0;
+}
+
+.city-container-full {
+    background-color: #003550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+}
+
+.city-container-search {
+    background-color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 40px 30px 40px;
+    width: 90%;
+    max-width: 100%;
+    margin: 20px;
+}
+
+.text {
+    margin: 5vh 0;
+}
+
+.holder {
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+.buttom {
+    background-color: #ffffff;
+    color: #003550;
+    border: 0.5px solid #ffffff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.buttom:hover {
+    background-color: #003550;
+    color: #ffffff;
+    border: 0.5px solid #ffffff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.temp-full {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.weather-title {
+    margin-top: 40px;
+}
+
+.weather-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clouds {
+    width: 100%;
+    max-width: 120px;
+    margin: 0;
+}
+
+.loop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cities-grid {
+    background-color: #003550;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.city-grid {
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
