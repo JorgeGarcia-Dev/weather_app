@@ -7,8 +7,6 @@ from flask import render_template
 
 from app.weather_data import WeatherService
 
-from typing import List, Dict
-
 
 index_bp = Blueprint(
     "index_bp", __name__, template_folder="templates", static_folder="static"
@@ -24,7 +22,7 @@ def index():
     Returns:
         The index.html template.
     """
-    ciudades: List[str] = [
+    ciudades = [
         "Tokio",
         "Seúl",
         "Delhi",
@@ -36,10 +34,10 @@ def index():
         "Shangai",
     ]
 
-    datos_ciudades: Dict[str, str] = {}
+    datos_ciudades = {}
 
     for ciudad in ciudades:
-        datos_ciudades[ciudad]: str = weather_service.get_weather_data(ciudad)
+        datos_ciudades[ciudad] = weather_service.get_weather_data(ciudad)
 
     if request.method == "POST":
         try:
